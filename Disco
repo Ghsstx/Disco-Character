@@ -1,0 +1,10 @@
+presets = {"Bright red","Bright yellow","Bright orange","Bright violet","Bright blue","Bright bluish green","Bright green"}
+while true do
+wait(0.5)
+ye = game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()
+for i,v in pairs(ye) do
+if v.className == "Part" then
+v.BrickColor = BrickColor.new(presets[math.random(1,#presets)])
+end
+end
+end
